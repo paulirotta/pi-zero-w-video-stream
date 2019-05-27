@@ -1,0 +1,5 @@
+# Pass in the IP number of the server as an argument
+while true
+do
+    mplayer -nostop-xscreensaver -nolirc -fps 60 -vo xv -vf rotate=0,screenshot -xy 1200 -demuxer h264es ffmpeg://tcp://$1:5001
+done
