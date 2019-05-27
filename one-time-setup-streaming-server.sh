@@ -1,5 +1,5 @@
 # Clean and reinstall pulseaudio
-sudo apt remove --purge also-base pulseaudio
+sudo apt remove --purge alsa-base pulseaudio
 sudo apt install alsa-base pulseaudio
 sudo apt -f install && sudo apt -y autoremove && sudo apt autoclean && sudo apt clean && sudo echo 3 | sudo tee /proc/sys/vm/dorp_cac$
 # fix folder permissions
